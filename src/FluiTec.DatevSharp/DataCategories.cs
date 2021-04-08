@@ -8,7 +8,7 @@ namespace FluiTec.DatevSharp
 	public static class DataCategories
 	{
 		/// <summary>   The bookings. </summary>
-		public static DataCategory Bookings => new DataCategory(21, "Buchungsstapel", 7);
+		public static DataCategory Bookings => new DataCategory(21, "Buchungsstapel", 9);
 
 		/// <summary>   The recurring bookings. </summary>
 		public static DataCategory RecurringBookings => new DataCategory(65, "Wiederkehrende Buchungen", 2);
@@ -60,7 +60,7 @@ namespace FluiTec.DatevSharp
 				case 21: // Buchungsstapel
 					switch (category.Version)
 					{
-						case 7:
+						case 9:
 							return new BookingHeaderRow();
 						default:
 							throw new NotImplementedException();

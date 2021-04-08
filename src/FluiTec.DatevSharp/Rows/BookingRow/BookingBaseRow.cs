@@ -223,5 +223,39 @@ namespace FluiTec.DatevSharp.Rows.BookingRow
         ///
         /// <value> The activity date. </value>
 		public DateTime? ActivityDate { get; set; }
+
+		/// <summary>	Gets or sets the due date. </summary>
+		/// 
+		/// <value> The due date of the payment. </value>
+		/// <remarks>
+		/// OPOS Information
+		/// </remarks>
+		public DateTime? DueDate { get; set; }
+
+		/// <summary>	Gets or sets the general inversion. </summary>
+		/// 
+		/// <value> 1 for invert another booking row. 0 for normal booking row. </value>
+		/// <remarks>
+		/// Default=0
+		/// </remarks>
+		public string GeneralInversion { get; set; }
+
+		/// <summary>	Gets or sets the Taxrate. </summary>
+		/// 
+		/// <value> The tax rate. </value>
+		/// <remarks>
+		/// MinLength=2
+		/// MaxLength=5
+		/// </remarks>
+		public int? TaxRate { get; set; }
+
+		/// <summary>	Gets or sets the country </summary>
+		/// 
+		/// <value> The country in 2 digits. See https://www.iso.org/iso-3166-country-codes.html for more information</value>
+		/// <remarks>
+		/// MaxLength=2
+		/// Example: DE for Germany
+		/// </remarks>
+		public string Country { get; set; }
 	}
 }

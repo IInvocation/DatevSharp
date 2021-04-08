@@ -17,7 +17,7 @@ namespace FluiTec.DatevSharp
 		public string FormatIdentifier => "EXTF";
 
         /// <summary>   The version of the export file. </summary>
-		public int Version => 510;
+		public int Version => 700;
 
         /// <summary>   Category the data belongs to. </summary>
 		public DataCategory DataCategory { get; set; }
